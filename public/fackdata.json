@@ -1,0 +1,110 @@
+[
+    {
+        "_id": 1001,
+        "name": "Electric Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/vz7JPDb/26-Inch-Female-Urban-Step-Through-Electric-City-Bike-Warehouse-in-Europe.png",
+        "quantity": 10,
+        "supplier name": "Anis"
+    },
+    {
+        "_id": 1002,
+        "name": "Cargo Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/GTQGPMm/713yg-Hl1e-UL-AC-SY450.png",
+        "quantity": 10,
+        "supplier name": "Baten"
+    },
+    {
+        "_id": 1003,
+        "name": "Kids Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/1zddByh/71-YG9mth-TIS-AC-SY450.png",
+        "quantity": 10,
+        "supplier name": "Kholil"
+    },
+    {
+        "_id": 1004,
+        "name": "Recumbent Bicycle",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/ccttpTG/images-3.png",
+        "quantity": 10,
+        "supplier name": "Emon"
+    },
+    {
+        "_id": 1005,
+        "name": "City Human Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/whqdvLj/images-1-1.png",
+        "quantity": 10,
+        "supplier name": "Momin"
+    },
+    {
+        "_id": 1006,
+        "name": "Mountain Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/kgnFM6n/ultracarbon01.png",
+        "quantity": 10,
+        "supplier name": "Salma"
+    },
+    {
+        "_id": 1007,
+        "name": "Folding Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/k0jSTBV/Titan-R-ebike-header.png",
+        "quantity": 10,
+        "supplier name": "Ahad"
+    },
+    {
+        "_id": 1008,
+        "name": "Rood Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/1s6rj2Z/CHEETAH-CAFE-RACER-BLACK-2048x2048.png",
+        "quantity": 10,
+        "supplier name": "Mustakin"
+    },
+    {
+        "_id": 1009,
+        "name": "Hybrid Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/jrwwK2H/61-Dfwdulj-WL-AC-SL1500.png",
+        "quantity": 10,
+        "supplier name": "Jihad"
+    },
+    {
+        "_id": 1010,
+        "name": "BMX Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/DkhstQ1/greaser-springer-features-800x.png",
+        "quantity": 10,
+        "supplier name": "Junaid"
+    },
+    {
+        "_id": 1011,
+        "name": "Cruiser Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/n10nzRV/images-2-1.png",
+        "quantity": 10,
+        "supplier name": "Fatema"
+    },
+    {
+        "_id": 1012,
+        "name": "Tandem Bike",
+        "price": 10000,
+        "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
+        "img": "https://i.ibb.co/Mf9mCys/images-3-1.png",
+        "quantity": 10,
+        "supplier name": "Siam"
+    }
+]

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './pages/shared/Header/Header';
@@ -12,9 +11,10 @@ function App() {
     <div className="App">
       <Header></Header>
       <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/register' element={<Register></Register>}></Route>
+        {/* <Route path='/register' element={<Register></Register>}></Route> */}
       </Routes>
     </div>
   );
