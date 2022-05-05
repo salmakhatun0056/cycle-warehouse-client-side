@@ -1,0 +1,17 @@
+.service-container {
+    box-shadow: 5px 5px 10px #aaaaaa;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    height: 150px;
+}
+
+.service-img {
+    height: 40px;
+    width: 50px;
+}
+
+/* .service-container :hover img {
+    background-color: rgb(0, 248, 248);
+} */

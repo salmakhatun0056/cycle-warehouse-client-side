@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import './Home.css'
 import Item from './Item/Item';
 import './Item/Item.css'
+import Services from './Services/Services';
 
 const Home = () => {
     const [items, setItems] = useState([])
@@ -33,7 +34,7 @@ const Home = () => {
                     </div>
                 </Carousel.Item>
             </Carousel>
-            <h2 className='my-4 text-info text-center'>Our Items</h2>
+            <h2 className='my-4 items-title text-center'>OUR ITEMS</h2>
             <div className='items-container container'>
                 {
                     items.slice(0 - 6).map(item => <Item key={item._id} item={item}>
@@ -41,6 +42,7 @@ const Home = () => {
                     </Item>)
                 }
             </div>
+            <Services></Services>
         </div>
     );
 };
