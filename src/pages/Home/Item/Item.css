@@ -1,4 +1,21 @@
+.item-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    box-shadow: 5px 5px 10px #aaaaaa;
+    padding: 10px;
+}
+
 .item-img {
     height: 140px;
     width: 200px;
+}
+
+.item-name {
+    color: gray;
+}
+
+.item-price {
+    color: orange;
 }

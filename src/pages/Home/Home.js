@@ -34,9 +34,9 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
             <h2 className='my-4 text-info text-center'>Our Items</h2>
-            <div className='item-container'>
+            <div className='items-container container'>
                 {
-                    items.map(item => <Item key={item.key} item={item}>
+                    items.slice(0 - 6).map(item => <Item key={item._id} item={item}>
 
                     </Item>)
                 }

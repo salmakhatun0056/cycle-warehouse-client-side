@@ -6,7 +6,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/vz7JPDb/26-Inch-Female-Urban-Step-Through-Electric-City-Bike-Warehouse-in-Europe.png",
         "quantity": 10,
-        "supplier name": "Anis"
+        "deliver": "Anis"
     },
     {
         "_id": 1002,
@@ -15,7 +15,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/GTQGPMm/713yg-Hl1e-UL-AC-SY450.png",
         "quantity": 10,
-        "supplier name": "Baten"
+        "deliver": "Baten"
     },
     {
         "_id": 1003,
@@ -24,7 +24,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/1zddByh/71-YG9mth-TIS-AC-SY450.png",
         "quantity": 10,
-        "supplier name": "Kholil"
+        "deliver": "Kholil"
     },
     {
         "_id": 1004,
@@ -33,7 +33,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/ccttpTG/images-3.png",
         "quantity": 10,
-        "supplier name": "Emon"
+        "deliver": "Emon"
     },
     {
         "_id": 1005,
@@ -42,7 +42,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/whqdvLj/images-1-1.png",
         "quantity": 10,
-        "supplier name": "Momin"
+        "deliver": "Momin"
     },
     {
         "_id": 1006,
@@ -51,7 +51,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/kgnFM6n/ultracarbon01.png",
         "quantity": 10,
-        "supplier name": "Salma"
+        "deliver": "Salma"
     },
     {
         "_id": 1007,
@@ -60,7 +60,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/k0jSTBV/Titan-R-ebike-header.png",
         "quantity": 10,
-        "supplier name": "Ahad"
+        "deliver": "Ahad"
     },
     {
         "_id": 1008,
@@ -69,7 +69,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/1s6rj2Z/CHEETAH-CAFE-RACER-BLACK-2048x2048.png",
         "quantity": 10,
-        "supplier name": "Mustakin"
+        "deliver": "Mustakin"
     },
     {
         "_id": 1009,
@@ -78,7 +78,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/jrwwK2H/61-Dfwdulj-WL-AC-SL1500.png",
         "quantity": 10,
-        "supplier name": "Jihad"
+        "deliver": "Jihad"
     },
     {
         "_id": 1010,
@@ -87,7 +87,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/DkhstQ1/greaser-springer-features-800x.png",
         "quantity": 10,
-        "supplier name": "Junaid"
+        "deliver": "Junaid"
     },
     {
         "_id": 1011,
@@ -96,7 +96,7 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/n10nzRV/images-2-1.png",
         "quantity": 10,
-        "supplier name": "Fatema"
+        "deliver": "Fatema"
     },
     {
         "_id": 1012,
@@ -105,6 +105,6 @@
         "description": "Oral surgery is a broad term for any operation performed on the structure of your teeth, gums, jaw and mouth. These include tooth extraction, dental bone grafts, corrective jaw surgery .",
         "img": "https://i.ibb.co/Mf9mCys/images-3-1.png",
         "quantity": 10,
-        "supplier name": "Siam"
+        "deliver": "Siam"
     }
 ]
