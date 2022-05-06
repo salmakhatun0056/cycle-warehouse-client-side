@@ -1,0 +1,40 @@
+.footers-container {
+    background-color: rgb(154, 154, 218);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-services a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-services a :hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width:576px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-services {
+        margin-left: 45px;
+    }
+
+    .buy-container {
+        margin-left: 45px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}

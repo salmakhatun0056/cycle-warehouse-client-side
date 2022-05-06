@@ -10,12 +10,12 @@
     padding: 20px;
 }
 
+.message-container {
+    width: 100%;
+}
+
 @media only screen and (max-width:576px) {
     .extra-container {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .message {
-        width: auto;
     }
 }

@@ -21,7 +21,7 @@ const ExtraSection = () => {
                     <h2>ABOUT US</h2>
                     <p>But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete count of the system, and expound the actual teaings of the great explorer idea announcing. But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete count of the system, and expound the actual teaings of the great explorer idea announcing.
 
-                        But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete count of the system, and expound the actual teaings of the great explorer idea announcing. <a href="">READ MORE</a></p>
+                        But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete count of the system, and expound the actual teaings of the great explorer idea announcing. <a>READ MORE</a></p>
                 </div>
                 <div className='request-section'>
                     <h2>REQUEST A QUICK QUOTE </h2>
@@ -36,9 +36,9 @@ const ExtraSection = () => {
                             <Form.Control ref={emailRef} type="email" placeholder="Email-address" required />
                         </Form.Group>
                         <Form.Group className="mb-3 message" controlId="formBasicMessage">
-                            <textarea ref={messageRef} name="message" id="" cols="auto" rows="3" placeholder='Your Message' />
+                            <textarea className='message-container' ref={messageRef} name="message" id="" rows="3" placeholder='Your Message' />
                         </Form.Group>
-                        <Button variant="primary" type="submit">
+                        <Button variant="info" type="submit">
                             Submit
                         </Button>
                     </Form>
