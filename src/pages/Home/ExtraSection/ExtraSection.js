@@ -35,13 +35,9 @@ const ExtraSection = () => {
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Control ref={emailRef} type="email" placeholder="Email-address" required />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicMessage">
-                            <textarea ref={messageRef} name="message" id="" cols="29" rows="3" placeholder='Your Message' />
+                        <Form.Group className="mb-3 message" controlId="formBasicMessage">
+                            <textarea ref={messageRef} name="message" id="" cols="auto" rows="3" placeholder='Your Message' />
                         </Form.Group>
-
-                        {/* <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Control type="Message" placeholder="Message" required />
-                        </Form.Group> */}
                         <Button variant="primary" type="submit">
                             Submit
                         </Button>
