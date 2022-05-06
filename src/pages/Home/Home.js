@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
+import ExtraSection from './ExtraSection/ExtraSection';
 import './Home.css'
 import Item from './Item/Item';
 import './Item/Item.css'
@@ -43,6 +44,7 @@ const Home = () => {
                 }
             </div>
             <Services></Services>
+            <ExtraSection></ExtraSection>
         </div>
     );
 };

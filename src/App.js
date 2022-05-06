@@ -4,7 +4,7 @@ import Header from './pages/shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
+import Footer from './pages/shared/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         {/* <Route path='/register' element={<Register></Register>}></Route> */}
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
