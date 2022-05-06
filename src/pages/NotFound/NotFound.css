@@ -1,0 +1,29 @@
+.notfound-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.notfount-text {
+    padding: 20px;
+}
+
+@media only screen and (max-width:576px) {
+    .notfound-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px) {
+    .notfound-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .notfount-text {
+        margin-bottom: 10px;
+    }
+
+    .notfound-img {
+        width: auto;
+    }
+}

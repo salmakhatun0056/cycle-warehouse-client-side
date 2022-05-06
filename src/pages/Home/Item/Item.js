@@ -8,8 +8,9 @@ const Item = ({ item }) => {
             <h4 className='item-name mt-3'>{name}</h4>
             <p className='item-price'>Price: ${price}</p>
             <h6>Qty: {quantity}</h6>
-            <p>Delevery man: <small>{deliver}</small></p>
+            <p>Supplier name: <small>{deliver}</small></p>
             <p><small>Item-Description: {description}</small></p>
+            <button className='btn btn-info text-white fw-bold'>Update</button>
         </div>
     );
 };
