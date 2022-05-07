@@ -23,11 +23,15 @@ const Header = () => {
                         </Nav>
                         <Nav>
                             <CustomLink to="/register">Register</CustomLink>
-                            {user ? <button className='btn btn-link text-black fw-bold text-decoration-none' onClick={handleSignOut}>Sign Out</button>
+                            {user ?
+                                <button style={{ fontSize: '15px' }} className='btn btn-link text-black  text-decoration-none' onClick={handleSignOut}>Sign Out</button>
                                 :
                                 <CustomLink to="/login">
                                     Login
                                 </CustomLink>}
+                            {user && <CustomLink to='/myitems'>My Items</CustomLink>}
+                            {user && <CustomLink to='/additems'>Add Items</CustomLink>}
+                            {user && <CustomLink to='/manegeitems'>Manege Items</CustomLink>}
                         </Nav>
 
                     </Navbar.Collapse>

@@ -27,12 +27,19 @@ const Registration = () => {
         const name = nameRef.current.value
         console.log(email, password, name)
         createUserWithEmailAndPassword(email, password)
-        console.log('Updated profile');
+        await sendEmailVerification(email);
+        alert('Sent email')
         navigate('/home')
         event.preventDefault()
     }
     if (loading) {
         return <LoadSpinner></LoadSpinner>
+    }
+    if (user) {
+        navigate('/')
+    }
+    else {
+        navigate('/register')
     }
     return (
         <div>
@@ -55,6 +62,7 @@ const Registration = () => {
 
                 <p>Already Have an account ? <Link to='/login' className='text-info pe-auto text-decoration-none'>Please login </Link></p>
                 {error && <p className='text-danger pe-auto'>{error.message}</p>}
+                {sendError && <p className='text-danger pe-auto'>{sendError.message}</p>}
                 <Button variant="primary" type="submit">Register</Button>
             </Form>
             <SocialLogin></SocialLogin>
