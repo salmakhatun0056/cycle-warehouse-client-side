@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import auth from '../../firebase.init';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import LoadSpinner from '../LoadSpinner/LoadSpinner';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -12,6 +12,7 @@ const Registration = () => {
     const passwordRef = useRef('')
     const nameRef = useRef('')
     const navigate = useNavigate()
+    const [sendEmailVerification, sending, sendError] = useSendEmailVerification(auth);
 
     const [
         createUserWithEmailAndPassword,

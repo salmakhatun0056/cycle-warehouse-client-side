@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
 import LoadSpinner from '../LoadSpinner/LoadSpinner';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [
@@ -14,6 +16,9 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(
+        auth
+    );
     const emailRef = useRef('')
     const passwordRef = useRef('')
     const nameRef = useRef('')
@@ -30,6 +35,16 @@ const Login = () => {
     }
     if (loading) {
         <LoadSpinner></LoadSpinner>
+    }
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('please enter your email address');
+        }
     }
     return (
         <div>
@@ -49,10 +64,12 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
+                <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
                 <p>New to cycle warehouse ? <Link to='/register' className='text-info pe-auto text-decoration-none'>Please Register </Link></p>
                 {error && <p className='text-danger pe-auto'>{error.message}</p>}
                 <Button variant="primary" type="submit">Login</Button>
             </Form>
+            <ToastContainer></ToastContainer>
             <SocialLogin></SocialLogin>
         </div>
     );
