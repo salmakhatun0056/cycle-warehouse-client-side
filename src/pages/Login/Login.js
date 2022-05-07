@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import LoadSpinner from '../LoadSpinner/LoadSpinner';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const [
@@ -48,11 +49,11 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-
                 <p>New to cycle warehouse ? <Link to='/register' className='text-info pe-auto text-decoration-none'>Please Register </Link></p>
                 {error && <p className='text-danger pe-auto'>{error.message}</p>}
                 <Button variant="primary" type="submit">Login</Button>
             </Form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

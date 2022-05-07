@@ -4,6 +4,7 @@ import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import LoadSpinner from '../LoadSpinner/LoadSpinner';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Registration = () => {
 
@@ -55,6 +56,7 @@ const Registration = () => {
                 {error && <p className='text-danger pe-auto'>{error.message}</p>}
                 <Button variant="primary" type="submit">Register</Button>
             </Form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
