@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import auth from '../../firebase.init';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import LoadSpinner from '../LoadSpinner/LoadSpinner';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -19,18 +19,18 @@ const Registration = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, updatError] = useUpdateProfile(auth);
 
     const handleRegister = async (event) => {
         const email = emailRef.current.value
         const password = passwordRef.current.value
         const name = nameRef.current.value
-        console.log(email, password, name)
-        createUserWithEmailAndPassword(email, password)
-        await sendEmailVerification(email);
-        alert('Sent email')
-        navigate('/home')
         event.preventDefault()
+        await createUserWithEmailAndPassword(email, password)
+        await updateProfile(name);
+        navigate('/home')
+
     }
     if (loading) {
         return <LoadSpinner></LoadSpinner>
@@ -38,9 +38,7 @@ const Registration = () => {
     if (user) {
         navigate('/')
     }
-    else {
-        navigate('/register')
-    }
+
     return (
         <div>
             <h1 className='text-info text-center mt-5'>Please Registration</h1>

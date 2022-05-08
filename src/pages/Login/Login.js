@@ -35,7 +35,7 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true });
     }
-    if (loading) {
+    if (loading || sending) {
         <LoadSpinner></LoadSpinner>
     }
     const resetPassword = async () => {

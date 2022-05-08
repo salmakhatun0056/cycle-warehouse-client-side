@@ -43,7 +43,9 @@ const Home = () => {
 
                     </Item>)
                 }
-                <Link style={{ textDecoration: "none" }} to='/inventories'><button className='btn btn-info d-block mx-auto text-white'>Manage  Inventories</button></Link>
+                <div className='d-block mx-auto mb-3 mt-3'>
+                    <Link style={{ textDecoration: "none" }} to='/inventories'><button className='btn btn-info  text-white'>Manage  Inventories</button></Link>
+                </div>
             </div>
             <Services></Services>
             <ExtraSection></ExtraSection>
