@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.css'
 
 const Footer = () => {
+    const today = new Date();
+    const year = today.getFullYear();
     return (
         <div className=' footers-container mt-5'>
             <div className='container footer-container text-white mx-auto'>
@@ -27,7 +29,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center mt-3 text-white mb-3'>
-                <p ><small className=' '>copyright &#169; 2022-2025 CycleCornerPress. All rights reserves</small></p>
+                <p ><small className=' '>copyright &#169; {year} CycleCornerPress. All rights reserves</small></p>
             </div>
         </div>
     );

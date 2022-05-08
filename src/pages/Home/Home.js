@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import ExtraSection from './ExtraSection/ExtraSection';
 import './Home.css'
 import Item from './Item/Item';
@@ -9,7 +10,7 @@ import Services from './Services/Services';
 const Home = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('fackdata.json')
+        fetch('http://localhost:5000/items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
@@ -42,6 +43,7 @@ const Home = () => {
 
                     </Item>)
                 }
+                <Link style={{ textDecoration: "none" }} to='/inventories'><button className='btn btn-info d-block mx-auto text-white'>Manage  Inventories</button></Link>
             </div>
             <Services></Services>
             <ExtraSection></ExtraSection>

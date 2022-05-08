@@ -11,14 +11,16 @@ const Header = () => {
         signOut(auth)
     }
     return (
-        <div>
-            <Navbar className='mt-3' collapseOnSelect expand="lg" bg="" variant="light">
-                <Container>
+        <>
+            <Navbar className=' mb-2' collapseOnSelect expand="lg" sticky="top" bg="light" variant="light">
+                <Container className='mt-3'>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <CustomLink to="/home">Home</CustomLink>
                             <CustomLink to="/blogs">Blogs</CustomLink>
+                            {/* <CustomLink to="/inventoryid">Inventory</CustomLink> */}
+
                         </Nav>
                         <Nav>
                             <CustomLink to="/register">Register</CustomLink>
@@ -36,7 +38,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 
