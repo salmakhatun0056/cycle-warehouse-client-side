@@ -38,6 +38,7 @@ const Inventories = () => {
             <table className='mx-auto' >
                 <thead>
                     <tr >
+                        <th>Photo</th>
                         <th>Name</th>
                         <th>Price</th>
                         <th>Quantity</th>
@@ -46,6 +47,7 @@ const Inventories = () => {
                 <tbody>
                     {
                         items.map(item => <tr className='text-center' key={item._id} item={item}>
+                            <td><img className='w-50 h-50' src={item.img} alt="" /></td>
                             < td> {item.name}</td>
                             <td>${item.price}</td>
                             <td>{item.quantity}</td>

@@ -63,13 +63,12 @@ const Update = () => {
                         <p> Supplier-name: {deliver}</p>
                         <p>Description: {description}</p>
                     </Card.Text>
-                    <Button className='btn btn-info text-white'>Delivered</Button>
                 </Card.Body>
+                <button className='btn btn-info text-white d-block mx-auto mb-3' onClick={() => handleDeliver(_id)}>Delivered</button>
             </Card>
 
             <div className='w-50 mx-auto mt-5'>
-                <button className='btn btn-info text-white d-block mx-auto mb-3' onClick={() => handleDeliver(_id)}>Delivered</button>
-                <form className='d-block mx-auto' onSubmit={handleOneAdd}>
+                <form className='d-block mx-auto w-100' onSubmit={handleOneAdd}>
                     <input ref={quantityRef} type="number" min="1" placeholder='QTY' /><button>Restock</button>
                 </form>
             </div>

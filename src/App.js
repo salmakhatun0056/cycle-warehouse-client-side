@@ -13,6 +13,7 @@ import InventoryId from './pages/InventoryId/Update';
 import Inventories from './pages/Inventories/Inventories';
 import AddNewItem from './pages/AddNewItem/AddNewItem'
 import Update from './pages/InventoryId/Update';
+import MyItem from './pages/MyItem/MyItem';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           <RequireAuth>
             <AddNewItem></AddNewItem>
           </RequireAuth>
+        }></Route>
+        <Route path='/myitem' element={
+          <RequireAuth><MyItem></MyItem></RequireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/items/:id' element={
