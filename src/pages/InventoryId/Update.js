@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 
@@ -18,6 +18,35 @@ const Update = () => {
     }, [id])
 
     const { name, price, description, _id, img, quantity, deliver } = item
+
+    const handleDeliver = async id => {
+        const newQuantity = quantity - 1;
+        item.quantity = newQuantity;
+        await fetch(`http://localhost:5000/items/${id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+
+        navigate(`/items/${id}`)
+    }
+    const quantityRef = useRef()
+
+    const handleOneAdd = async e => {
+        e.preventDefault()
+        const newQty = parseInt(quantityRef.current.value) + quantity;
+        item.quantity = newQty;
+        await fetch(`http://localhost:5000/items/${_id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+        navigate(`/items/${_id}`)
+    }
     return (
         <div>
             <div className='mb-3 mt-5'>
@@ -28,14 +57,22 @@ const Update = () => {
                 <Card.Body>
                     <Card.Title>Name: {name}</Card.Title>
                     <Card.Text>
-                        <p>Price: {price}</p>
+                        <p>Id: {_id}</p>
+                        <p style={{ color: 'orange' }}>Price: {price}</p>
                         <p>Qty: {quantity}</p>
                         <p> Supplier-name: {deliver}</p>
                         <p>Description: {description}</p>
                     </Card.Text>
-                    <Button>Delivered</Button>
+                    <Button className='btn btn-info text-white'>Delivered</Button>
                 </Card.Body>
             </Card>
+
+            <div className='w-50 mx-auto mt-5'>
+                <button className='btn btn-info text-white d-block mx-auto mb-3' onClick={() => handleDeliver(_id)}>Delivered</button>
+                <form className='d-block mx-auto' onSubmit={handleOneAdd}>
+                    <input ref={quantityRef} type="number" min="1" placeholder='QTY' /><button>Restock</button>
+                </form>
+            </div>
         </div>
 
     );

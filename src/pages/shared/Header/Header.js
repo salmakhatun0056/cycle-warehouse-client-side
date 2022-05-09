@@ -19,7 +19,6 @@ const Header = () => {
                         <Nav className="me-auto">
                             <CustomLink to="/home">Home</CustomLink>
                             <CustomLink to="/blogs">Blogs</CustomLink>
-                            {/* <CustomLink to="/inventoryid">Inventory</CustomLink> */}
 
                         </Nav>
                         <Nav>

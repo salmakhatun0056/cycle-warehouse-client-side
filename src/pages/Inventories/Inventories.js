@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import AddNewItem from '../AddNewItem/AddNewItem';
 import './Inventories.css'
 
@@ -48,14 +49,14 @@ const Inventories = () => {
                             < td> {item.name}</td>
                             <td>${item.price}</td>
                             <td>{item.quantity}</td>
-                            <td><Button onClick={() => handleItemDelete(item._id)}>Delete</Button></td>
+                            <td><Button className='text-info text-white' onClick={() => handleItemDelete(item._id)}>Delete</Button></td>
                         </tr>)
 
                     }
                 </tbody>
 
             </table>
-            <AddNewItem></AddNewItem>
+            <Link to='/addnewitem'><button className='btn btn-primary text-white d-block text-decoration-none mx-auto mt-3'>Add New Item</button></Link>
         </div >
     );
 };

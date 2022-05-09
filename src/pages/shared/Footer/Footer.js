@@ -23,9 +23,9 @@ const Footer = () => {
                     <a href=""><p>Storage</p></a>
                 </div>
                 <div className='mt-5 mb-5 me-5 buy-container'>
-                    <h5 className='mb-3 fw-4'>BUY NOW</h5>
+                    <h5 className='mb-3 fw-4'>Store now</h5>
                     <p>But i must explain to you how all this mistaken idea pleasure and praising pain was born and i will give you. But i explain to you how all this mistaken idea.</p>
-                    <button className='btn btn-light text-info'>Buy them for $80</button>
+                    <button className='btn btn-light text-black'>Store now</button>
                 </div>
             </div>
             <div className='text-center mt-3 text-white mb-3'>
