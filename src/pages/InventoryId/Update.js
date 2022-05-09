@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Button, Card } from 'react-bootstrap';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 const Update = () => {
     const { id } = useParams()
@@ -16,11 +17,27 @@ const Update = () => {
         getData()
     }, [id])
 
-    const { name } = item
+    const { name, price, description, _id, img, quantity, deliver } = item
     return (
         <div>
-            <h2>name:{name}</h2>
+            <div className='mb-3 mt-5'>
+                <Link style={{ textDecoration: "none" }} to='/inventories'><button className='btn btn-info  text-white mx-auto d-block'>Manage All Inventories</button></Link>
+            </div>
+            <Card className='mx-auto' style={{ width: '25rem' }}>
+                <Card.Img className='w-50 h-50 mx-auto mt-3' variant="top" src={img} />
+                <Card.Body>
+                    <Card.Title>Name: {name}</Card.Title>
+                    <Card.Text>
+                        <p>Price: {price}</p>
+                        <p>Qty: {quantity}</p>
+                        <p> Supplier-name: {deliver}</p>
+                        <p>Description: {description}</p>
+                    </Card.Text>
+                    <Button>Delivered</Button>
+                </Card.Body>
+            </Card>
         </div>
+
     );
 };
 
