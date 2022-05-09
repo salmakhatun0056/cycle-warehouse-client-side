@@ -31,7 +31,7 @@ const Header = () => {
                                     Login
                                 </CustomLink>}
                             {user && <CustomLink to='/myitems'>My Items</CustomLink>}
-                            {user && <CustomLink to='/additems'>Add Items</CustomLink>}
+                            {user && <CustomLink to='/addnewitem'>Add Items</CustomLink>}
                             {user && <CustomLink to='/manegeitems'>Manege Items</CustomLink>}
                         </Nav>
 

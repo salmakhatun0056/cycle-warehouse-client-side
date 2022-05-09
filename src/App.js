@@ -9,8 +9,10 @@ import NotFound from './pages/NotFound/NotFound';
 import Registration from './pages/Registration/Registration';
 import Blogs from './pages/Blogs/Blogs';
 import RequireAuth from './pages/RequireAuth/RequireAuth';
-import InventoryId from './pages/InventoryId/InventoryId';
+import InventoryId from './pages/InventoryId/Update';
 import Inventories from './pages/Inventories/Inventories';
+import AddNewItem from './pages/AddNewItem/AddNewItem'
+import Update from './pages/InventoryId/Update';
 
 function App() {
   return (
@@ -20,13 +22,15 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
-        <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/inventoryid' element={<InventoryId></InventoryId>}></Route>
-        <Route path='/blogs' element={
+        <Route path='/addnewitem' element={
           <RequireAuth>
-            <Blogs></Blogs>
+            <AddNewItem></AddNewItem>
           </RequireAuth>
         }></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/items/:id' element={<Update></Update>}></Route>
+
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/register' element={<Registration></Registration>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

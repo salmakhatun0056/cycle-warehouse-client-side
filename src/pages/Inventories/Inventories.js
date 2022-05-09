@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import AddNewItem from '../AddNewItem/AddNewItem';
 import './Inventories.css'
 
 const Inventories = () => {
@@ -54,6 +55,7 @@ const Inventories = () => {
                 </tbody>
 
             </table>
+            <AddNewItem></AddNewItem>
         </div >
     );
 };
