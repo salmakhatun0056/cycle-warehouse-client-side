@@ -5,7 +5,7 @@ const AddNewItem = () => {
     const navigate = useNavigate()
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/items')
+        fetch('https://serene-atoll-45482.herokuapp.com/items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
@@ -27,7 +27,7 @@ const AddNewItem = () => {
         const img = photoRef.current.value
         const data = { name, price, deliver, quantity, description, img }
 
-        fetch('http://localhost:5000/items/', {
+        fetch('https://serene-atoll-45482.herokuapp.com/items/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

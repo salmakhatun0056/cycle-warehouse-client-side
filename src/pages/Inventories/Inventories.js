@@ -7,7 +7,7 @@ import './Inventories.css'
 const Inventories = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/items')
+        fetch('https://serene-atoll-45482.herokuapp.com/items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
@@ -16,7 +16,7 @@ const Inventories = () => {
         const process = window.confirm('Are you sure you want to delete?')
         if (process) {
             console.log('deleting items', id)
-            const url = `http://localhost:5000/items/${id}`
+            const url = `https://serene-atoll-45482.herokuapp.com/items/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
