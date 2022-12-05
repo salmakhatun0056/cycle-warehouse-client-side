@@ -9,7 +9,7 @@ const Update = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const url = `https://serene-atoll-45482.herokuapp.com/items/${id}`
+            const url = `https://cycle-warehouse.up.railway.app/items/${id}`
             fetch(url)
                 .then(res => res.json())
                 .then(data => setItem(data))
@@ -22,7 +22,7 @@ const Update = () => {
     const handleDeliver = async id => {
         const newQuantity = quantity - 1;
         item.quantity = newQuantity;
-        await fetch(`https://serene-atoll-45482.herokuapp.com/items/${id}`, {
+        await fetch(`https://cycle-warehouse.up.railway.app/items/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +38,7 @@ const Update = () => {
         e.preventDefault()
         const newQty = parseInt(quantityRef.current.value) + quantity;
         item.quantity = newQty;
-        await fetch(`https://serene-atoll-45482.herokuapp.com/items/${_id}`, {
+        await fetch(`https://cycle-warehouse.up.railway.app/items/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

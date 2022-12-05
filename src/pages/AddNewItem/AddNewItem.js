@@ -5,7 +5,7 @@ const AddNewItem = () => {
     const navigate = useNavigate()
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('https://serene-atoll-45482.herokuapp.com/items')
+        fetch('https://cycle-warehouse.up.railway.app/items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
@@ -27,7 +27,7 @@ const AddNewItem = () => {
         const img = photoRef.current.value
         const data = { name, price, deliver, quantity, description, img }
 
-        fetch('https://serene-atoll-45482.herokuapp.com/items/', {
+        fetch('https://cycle-warehouse.up.railway.app/items/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

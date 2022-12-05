@@ -10,7 +10,7 @@ import Services from './Services/Services';
 const Home = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('https://serene-atoll-45482.herokuapp.com/items')
+        fetch('https://cycle-warehouse.up.railway.app/items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
